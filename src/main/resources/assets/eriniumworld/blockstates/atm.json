@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "eriniumworld:atm"
+    },
+    "facing=north": {
+      "model": "eriniumworld:atm"
+    },
+    "facing=east": {
+      "model": "eriniumworld:atm",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "eriniumworld:atm",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "eriniumworld:atm",
+      "y": 270
+    }
+  }
+}

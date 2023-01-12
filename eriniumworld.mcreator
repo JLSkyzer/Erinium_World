@@ -1,14 +1,160 @@
 {
-  "id_map": {},
-  "mod_elements": [],
-  "variable_elements": [],
+  "id_map": {
+    "GUI": 1
+  },
+  "mod_elements": [
+    {
+      "name": "ERPDLogo",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "erpd_logo",
+      "path": "~/Icons"
+    },
+    {
+      "name": "ERPDPaintingBigSquare",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "erpd_painting_big_square",
+      "path": "~/Paintings/Big Square"
+    },
+    {
+      "name": "EriniumLogo",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "erinium_logo",
+      "path": "~/Icons"
+    },
+    {
+      "name": "EriniumTab",
+      "type": "tab",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "erinium_tab"
+    },
+    {
+      "name": "Atm",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "atm",
+      "path": "~/Economy"
+    },
+    {
+      "name": "TestGui",
+      "type": "gui",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {
+        "0": 1
+      },
+      "registry_name": "test_gui",
+      "path": "~/Test"
+    },
+    {
+      "name": "TestCommandCommandExecuted",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "test_command_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TestCommand",
+      "type": "command",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "test_command",
+      "path": "~/Test"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "eriniumMoney",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "500.0"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.erpd_logo.name": "ERPD Logo",
+      "item.erinium_logo.name": "Erinium Logo",
+      "tile.atm.name": "Atm",
+      "tile.erpd_painting_big_square.name": "ERPD Painting Big Square",
+      "itemGroup.taberinium_tab": "§1Erinium World"
+    }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Economy",
+        "children": []
+      },
+      {
+        "name": "Icons",
+        "children": []
+      },
+      {
+        "name": "Jobs",
+        "children": []
+      },
+      {
+        "name": "Paintings",
+        "children": [
+          {
+            "name": "Big Square",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Test",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "eriniumworld",
@@ -24,6 +170,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.12.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "fr.eriniumgroups.eriniumworld",
     "lockBaseModFiles": false
   },

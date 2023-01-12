@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "eriniumworld:erpd_painting_big_square"
+    },
+    "facing=north": {
+      "model": "eriniumworld:erpd_painting_big_square"
+    },
+    "facing=east": {
+      "model": "eriniumworld:erpd_painting_big_square",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "eriniumworld:erpd_painting_big_square",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "eriniumworld:erpd_painting_big_square",
+      "y": 270
+    }
+  }
+}

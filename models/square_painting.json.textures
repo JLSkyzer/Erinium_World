@@ -1,0 +1,18 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "image": "default_icon",
+        "bois": "bois"
+      },
+      "name": "default"
+    },
+    "erpdpainting": {
+      "map": {
+        "image": "erinium_police_departement",
+        "bois": "bois"
+      },
+      "name": "erpdpainting"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "eriniumworld:custom/square_painting",
+  "textures": {
+    "all": "eriniumworld:blocks/erpdfill",
+    "particle": "eriniumworld:blocks/erpdfill",
+    "image": "eriniumworld:blocks/erinium_police_departement",
+    "bois": "eriniumworld:blocks/bois"
+  }
+}

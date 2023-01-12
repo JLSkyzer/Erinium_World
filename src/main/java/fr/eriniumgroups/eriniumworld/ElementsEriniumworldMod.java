@@ -45,6 +45,8 @@ import java.util.ArrayList;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Retention;
 
+import fr.eriniumgroups.eriniumworld.gui.GuiTestGui;
+
 public class ElementsEriniumworldMod implements IFuelHandler, IWorldGenerator {
 	public final List<ModElement> elements = new ArrayList<>();
 	public final List<Supplier<Block>> blocks = new ArrayList<>();
@@ -125,11 +127,15 @@ public class ElementsEriniumworldMod implements IFuelHandler, IWorldGenerator {
 	public static class GuiHandler implements IGuiHandler {
 		@Override
 		public Object getServerGuiElement(int id, EntityPlayer player, World world, int x, int y, int z) {
+			if (id == GuiTestGui.GUIID)
+				return new GuiTestGui.GuiContainerMod(world, x, y, z, player);
 			return null;
 		}
 
 		@Override
 		public Object getClientGuiElement(int id, EntityPlayer player, World world, int x, int y, int z) {
+			if (id == GuiTestGui.GUIID)
+				return new GuiTestGui.GuiWindow(world, x, y, z, player);
 			return null;
 		}
 	}
