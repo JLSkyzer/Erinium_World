@@ -101,10 +101,11 @@ public class GuiTestGui extends ElementsEriniumworldMod.ModElement{
 			this.xSize = 176;
 			this.ySize = 166;
 		}
-		private static final ResourceLocation texture = new ResourceLocation("eriniumworld:textures/test_gui.png");
+		public static final ResourceLocation texture = new ResourceLocation("eriniumworld:textures/test_gui.png");
 		@Override
 		public void drawScreen(int mouseX, int mouseY, float partialTicks) {
 			this.drawDefaultBackground();
+			this.mc.getTextureManager().bindTexture(new ResourceLocation("eriniumworld:textures/test_gui.png"));
 			super.drawScreen(mouseX, mouseY, partialTicks);
 			this.renderHoveredToolTip(mouseX, mouseY);
 		}
@@ -112,6 +113,7 @@ public class GuiTestGui extends ElementsEriniumworldMod.ModElement{
 		@Override
 		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
 			GL11.glColor4f(1, 1, 1, 1);
+			this.drawDefaultBackground();
 			this.mc.renderEngine.bindTexture(texture);
 			int k = (this.width - this.xSize) / 2;
 			int l = (this.height - this.ySize) / 2;
@@ -151,7 +153,7 @@ public class GuiTestGui extends ElementsEriniumworldMod.ModElement{
 			this.guiTop = (this.height - 166) / 2;
 			Keyboard.enableRepeatEvents(true);
 			this.buttonList.clear();
-			this.buttonList.add(new GuiButtonImage(0, this.guiLeft + 36, this.guiTop + 48, 150, 20, new ResourceLocation("eriniumworld:textures/test_button.png")){
+			this.buttonList.add(new GuiButtonImage(0, this.guiLeft + 36, this.guiTop + 48, 100, 20, new ResourceLocation("eriniumworld:textures/test_button.png")){
 		     @Override
 		     public void drawButton(Minecraft mc, int mouseX, int mouseY, float partialTicks) {
 		          if (this.visible) {

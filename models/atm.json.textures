@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "atm_screen_panel.png": "atm_screen_panel",
+        "atm button.png": "atm_button",
+        "iron_block.png": "iron_block"
+      },
+      "name": "default"
+    }
+  }
+}

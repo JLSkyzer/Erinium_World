@@ -1,12 +1,10 @@
 {
-  "parent": "block/cube",
+  "parent": "eriniumworld:custom/atm",
   "textures": {
-    "down": "eriniumworld:blocks/iron_block",
-    "up": "eriniumworld:blocks/iron_block",
-    "north": "eriniumworld:blocks/iron_block",
-    "east": "eriniumworld:blocks/iron_block",
-    "south": "eriniumworld:blocks/iron_block",
-    "west": "eriniumworld:blocks/iron_block",
-    "particle": "eriniumworld:blocks/iron_block"
+    "all": "eriniumworld:blocks/iron_block",
+    "particle": "eriniumworld:blocks/iron_block",
+    "atm_screen_panel.png": "eriniumworld:blocks/atm_screen_panel",
+    "atm button.png": "eriniumworld:blocks/atm_button",
+    "iron_block.png": "eriniumworld:blocks/iron_block"
   }
 }
